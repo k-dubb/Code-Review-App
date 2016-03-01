@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<html lang="en" ng-app="CodeReview">
+  <head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/semantic/semantic.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/javascripts/stacksController.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="/javascripts/app.js"></script>
+</head>
+<body>
+
+    <!-- <div class="ui top fixed stackable menu"> -->
+    <!-- <div class="ui four item fluid menu top fixed container" id="head">  -->
+    <div class="ui two item fluid menu top fixed container" id="head"> 
+
+        <div class="header item" id="header"> < Code Review > </div>
+      <!--   <div class="item" id="usersname">Hello, {{username}}</div>
+        <a class="item" id="logout">Logout</a> -->
+    </div>
+
+    <div class="item" id="saying">Your home for web development study!</div>
+
+    <div class="ui grid container">
+        <div class="centered seven wide stackable column" id="categoryList">
+            <button class="ui black basic button" id="category">Categories:</button>
+            <a href="/study"><button class="ui violet basic button" id="violet">HTML/CSS</button></a>
+            <a href="/study"><button class="ui green basic button" id="green">JavaScript</button></a> 
+            <a href="/study"><button class="ui blue basic button" id="blue">Ruby on Rails</button></a>
+        </div>
+        <div class="centered seven wide column">
+            <div class="ui segment" id="loginSection">
+                <h4>Sign up or login to make your own flashcards!</h4>
+                <a href="/login"><button class="ui black button" id="log">Login</button></a>
+                <a href="/signup"><button class="ui black button" id="log">Signup</button></a>
+            </div>
+        </div>
+    </div>
+
+<div class="centered seven wide column"
+ng-repeat="flash in flash.all" >
+  <flash></flash>
+</div>
+
+
+  </body>
+</html>

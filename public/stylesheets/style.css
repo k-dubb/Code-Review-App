@@ -1,0 +1,122 @@
+body {
+    padding: 50px;
+    padding-top:80px; 
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+/*.ui.menu{
+    background-color: #eaeaea;
+    color: black;
+}*/
+/*.header.item{
+    width: 350px;
+    position: left !important;
+}*/
+#saying{
+    width: 500px;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    /*position: left;*/
+    font-size: 26px;
+}
+#usersname, #logout{
+    max-width: 200px;
+}
+#logout:hover{
+    color: #E83F6F;
+}
+.ui.menu .item{
+    padding: 10px;
+    background-color: #eaeaea;
+    color: black;
+}
+/*.ui.menu .item:before{
+    position: relative !important;
+}*/
+/*.ui.item.menu .item{
+justify-content: none !important;
+text-align: left !important;
+}*/
+.item{
+    font-size: 20px;
+}
+.header{
+    font-size: 45px;
+    background-color: #eaeaea;
+    min-width: 800px;
+/*    margin-left: 0px !important;
+    position: relative !important;
+    left: 0 !important;
+    display: left !important;*/
+/*    justify-content: flex-start !important;
+*/}
+#head{
+    background-color: #eaeaea;
+}
+#header{
+    color: #E83F6F;
+    font-weight: normal;
+    width: 100%;
+}
+.ui.segment{
+    text-align: center;
+    padding: 50px 40px;
+    height: auto;
+}
+h4{
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+#log{
+    margin: 10px;
+    font-size: 20px;
+    min-width: 200px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+#log:hover{
+    background-color: white;
+    color: #E83F6F;
+    border: 1px solid black;
+}
+.ui.basic.button{
+    min-width: 350px !important;
+    padding: 12px;
+    margin: 10px;
+    font-size: 18px;
+}
+#violet, #green, #blue{
+    border: 1.5px solid;
+    font-size: 20px;
+    font-weight: bold;
+}
+#violet:hover{
+    background-color: #6435c9 !important;
+    color: white !important;
+}
+#green:hover{
+    background-color: #21ba45 !important;
+    color: white !important;
+}
+#blue:hover{
+    background-color: #2185d0 !important;
+    color: white !important;
+}
+#category{
+    text-align: center;
+    box-shadow: none !important;
+    font-size: 26px;
+    font-weight: bold;
+}
+#loginSection{
+    margin-top: 50px;
+    margin-right: 40px;
+    background-color: #f4f4f4;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+#categoryList{
+    margin-top: 30px;
+    margin-left: 40px;
+}
