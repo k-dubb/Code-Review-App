@@ -22,7 +22,7 @@
       })
       // go thru the flashcards
       .state('study', {
-        url: '/#study',
+        url: '/study',
         templateUrl: '/templates/_studyView.html'
       })
   });

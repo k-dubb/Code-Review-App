@@ -12,11 +12,13 @@
     }).then(function successCallback(response) {
       console.log('success', response.data);
 
-      self.cards = response.data;
+      self.stacks = response.data;
+
+      return this;
+
     }, function errorCallback(response) {
 
     });
-   return this;
 
   });
   

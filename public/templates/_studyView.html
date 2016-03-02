@@ -3,16 +3,24 @@
 
 <!-- 2 ng-repeats. loop thru cards array then loop thru again to get the term/def -->
 <!-- <div class="flash" ng-controller="StacksController as stackCtrl"> -->
-<div class="flash">
-    <!-- <div ng-repeat="card in cards"> -->
-        <!-- <div ng-repeat="(term, definition) in card"> -->
-            {{card.term}} : {{card.definition}}
-    <!--     <div class="ui segment" ng-click="flipcards=!flipcard">
-            <h4 ng-show="flipcard" id="flashcard">{{term}}</h4> -->
-            <div class="ui segment" id="flashcard" ng-click="clicked=true" >
-                <h4 ng-show="submitted" id="flashcard">Tests</h4>
-                <h4 ng-hide="submitted" id="flashcard">{{term}}</h4>
+<section ng-controller="StacksController as stackCtrl">
+    <div class="flash">
+        <div class="ui segment" id="flashcard" ng-click="clicked=true" >
+            <div ng-repeat="stack in stackCtrl.stacks">
+                <!-- {{stack.topic}} -->
+                <div ng-repeat="card in stack.cards" >
+                    {{card.term}}
+                    <!-- <div ng-repeat="(term, definition) in card"> -->
+                    <!-- <h4 ng-show="submitted">{{card.term}}</h4> -->
+
+                <!-- {{card.term}} : {{card.definition}} -->
+        <!--     <div class="ui segment" ng-click="flipcards=!flipcard">
+                <h4 ng-show="flipcard" id="flashcard">{{term}}</h4> -->
+                    <!-- <h4 ng-show="submitted" id="flashcard">Tests</h4>
+                    <h4 ng-hide="submitted" id="flashcard">{{term}}</h4> -->
+                <!-- </div> -->
+                </div>
             </div>
-        <!-- </div> -->
-    <!-- </div> -->
-</div>
+        </div>
+    </div>
+</section>

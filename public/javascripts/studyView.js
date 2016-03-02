@@ -10,7 +10,7 @@
         // directive.replace = true;
         directive.templateUrl =  "/templates/_studyView.html";
         // directive.scope = {
-        //     term: 'Test'
+        //     term: '@'
         // };
 
     return directive;
