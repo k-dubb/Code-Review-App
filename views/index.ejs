@@ -10,11 +10,19 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/semantic/semantic.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="/javascripts/stacksController.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/stacksController.js"></script>
+    <script src="/javascripts/studyView.js"></script>
+    <script src="/javascripts/stackView.js"></script>
+    <script src="/javascripts/userView.js"></script>
 </head>
-<body>
+<body ng-controller="StacksController">
+
+    <li ng-repeat="card in cards">
+        <span>{{card.term}}</span>
+    </li>
 
     <!-- <div class="ui top fixed stackable menu"> -->
     <!-- <div class="ui four item fluid menu top fixed container" id="head">  -->
@@ -43,10 +51,19 @@
         </div>
     </div>
 
-<div class="centered seven wide column"
-ng-repeat="flash in flash.all" >
+
+<!-- <div class="centered seven wide column" -->
+<!-- ng-repeat="flash in flash.all" > -->
   <flash></flash>
-</div>
+<!-- </div> -->
+
+<!-- <ul ng-controller="CodeReview">
+    <li ng-repeat="flashcard in flashcards">
+            {{flashcard.question}}
+    </li>
+</ul> -->
+
+
 
 
   </body>

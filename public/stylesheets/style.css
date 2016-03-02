@@ -114,9 +114,18 @@ h4{
     margin-right: 40px;
     background-color: #f4f4f4;
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-
 }
 #categoryList{
     margin-top: 30px;
     margin-left: 40px;
+}
+#flashcard{
+    height: 300px;
+    width: 500px;
+    padding: 0px;
+}
+h3{
+    vertical-align: middle;
+    margin-top: 100px !important;
+    font-size: 24px;
 }

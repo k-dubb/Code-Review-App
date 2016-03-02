@@ -1,1 +1,22 @@
 <!-- Show user's stacks once logged in -->
+
+<div class="usersPage">
+    <!-- <div class="ui top fixed stackable menu"> -->
+    <div class="ui four item fluid menu top fixed container" id="head"> 
+    <div class="ui two item fluid menu top fixed container" id="head"> 
+
+        <div class="header item" id="header"> < Code Review > </div>
+        <div class="item" id="usersname">Hello, {{username}}</div>
+        <a class="item" id="logout">Logout</a>
+    </div>
+
+    <div class="item" id="saying">Your home for web development study!</div>
+
+    <div class="ui grid container">
+        <div class="centered seven wide stackable column" id="categoryList">
+            <button class="ui black basic button" id="category">Categories:</button>
+            <a href="/study"><button class="ui violet basic button" id="violet">HTML/CSS</button></a>
+            <a href="/study"><button class="ui green basic button" id="green">JavaScript</button></a> 
+            <a href="/study"><button class="ui blue basic button" id="blue">Ruby on Rails</button></a>
+        </div>
+</div>

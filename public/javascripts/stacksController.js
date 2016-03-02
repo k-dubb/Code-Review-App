@@ -1,29 +1,34 @@
-// (function() {
-
-//     var app = angular.module('CodeReview');
-
-    
-//     app.controller('StacksController', function(){
-//         this.question = "TESTING!";
-//         return this;
-//     });
-// })();
-
 (function() {
+  var app = angular.module('CodeReview');
 
-    var app = angular.module('CodeReview');
+  app.controller('StacksController', function($http) {
+    this.newCard = { term: '', definition: '' };
+    
+    var self = this;
 
-app.controller('CodeReview', function(){
-    this.message = "I couldn't complete my homework because _________.";
+    $http({
+      method: 'GET',
+      url: '/api/study'
+    }).then(function successCallback(response) {
+      console.log('success', response.data);
 
-    this.cards = [
-        {question: "What is Batman's guilty pleasure?"},
-        {question: "I couldn't complete my homework because _________."},
-        {question: "I get by with a little help from _________."},
-        {question: "_________. It's a trap!"},
-        {question: "The class field trip was completely ruined by _________."},
-        {question: "What's my secret power?"}
-    ];
+      self.cards = response.data;
+    }, function errorCallback(response) {
 
-        return this;
     });
+   return this;
+
+  });
+  
+})();
+
+// (function() {
+//     var app = angular.module('CodeReview', []);
+
+//     app.controller('StacksController', function($scope) {
+
+//     $scope.cards = [{ term: 'test1'}, {term: 'Test2'}];
+    
+//     });
+
+// })();

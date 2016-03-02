@@ -6,10 +6,10 @@
 
     $stateProvider
     // home page
-      .state('home', {
-        url: '/',
-        templateUrl: '/templates/_homeView.html'
-      })
+      // .state('home', {
+      //   url: '/',
+      //   templateUrl: '/templates/_homeView.html'
+      // })
       // show user's stacks of flashcards
       .state('user', {
         url: '/user',
@@ -22,7 +22,7 @@
       })
       // go thru the flashcards
       .state('study', {
-        url: '/study',
+        url: '/#study',
         templateUrl: '/templates/_studyView.html'
       })
   });
