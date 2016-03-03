@@ -1,9 +1,15 @@
 module.exports = function(app, passport) {
 
+    // app.use(function (req, res, next) {
+    //     if (req.isAuthenticated()) res.expose(req.user, 'user');
+    //     next ();
+    // });
+
     // =====================================
     // HOME PAGE (with login links) ========
     // =====================================
     app.get('/', function(req, res) {
+        console.log(req.user);
         res.render('index.ejs'); // load the index.ejs file
     });
 
@@ -54,6 +60,17 @@ module.exports = function(app, passport) {
             user : req.user // get the user out of session and pass to template
         });
     });
+
+
+    // app.post('/user/create', isLoggedIn, function(req, res) {
+    //   console.log("it's working!");
+    //   // var venueID = req.params.id;
+    //   var userID = req.user;
+    //   console.log(userID);
+
+    //   // res.send('test');
+    // });
+
 
     // =====================================
     // LOGOUT ==============================

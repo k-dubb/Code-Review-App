@@ -9,7 +9,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/api/study', function(req, res, next) {
-  // res.render('index', { title: 'CodeReview' });
 
     Stack.find( {  }, function(err, data) {
         if (err) console.log(err);
@@ -17,11 +16,31 @@ router.get('/api/study', function(req, res, next) {
         res.json(data);
     });
 
-    // User.find({  }, 'email', function(err, users) {
+    // User.find({  }, function(err, data) {
     // if (err) console.log(err);
-    // console.log(users.local.email);
+    //     res.json(data);
+    //     console.log(user);
     // });
 
+});
+
+router.post('/user', function(req, res){
+
+    Stack.create({
+        topic: req.body.text,
+        term: req.body.text,
+        definition: req.body.text,
+        user_id: req.user
+    }, function(err, stack){
+        if (err)
+            res.send(err);
+
+        Stack.find(function(err, stacks){
+            if(err)
+                res.send(err)
+            res.json(stacks);
+        });
+    });
 });
 
 module.exports = router;

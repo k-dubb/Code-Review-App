@@ -1,22 +1,20 @@
 <!-- Show user's stacks once logged in -->
 
-    <!-- Header -->
-    <div class="top" ng-controller="StacksController as stackCtrl">
-        <div class="ui four item fluid menu top fixed container" id="head2"> 
-            <a ui-sref="home"><div class="header2 item" id="header2"> < Code Review > </div></a>
-            <!-- <div class="item" id="usersname">Hello, {{username}}</div> -->
-            <div class="item" id="saying2">Your home for web development study!</div>
-            <a ui-sref="home" class="item" id="logout">Logout</a>
-        </div>
-    </div> 
-
-
-    <div class="ui grid container" id="userCategory">
-        <div class="centered seven wide stackable column">
-            <button class="ui black basic button" id="category2">Categories:</button>
-            <a ui-sref="create"><button class="ui black basic button" id="black">Create your own flashcard pile!</button></a>
-            <a ui-sref="study"><button class="ui violet basic button" id="violet">HTML/CSS</button></a>
-            <a ui-sref="study"><button class="ui green basic button" id="green">JavaScript</button></a> 
-            <a ui-sref="study"><button class="ui blue basic button" id="blue">Ruby on Rails</button></a>
-        </div>
+<div class="top" ng-controller="StacksController as stackCtrl">
+    <div class="ui four item fluid menu top fixed container" id="head2"> 
+        <a ui-sref="home"><div class="header2 item" id="header2"> < Code Review > </div></a>
+        <!-- <div class="item" id="usersname">Hello, {{username}}</div> -->
+        <div class="item" id="saying2">Your home for web development study!</div>
+        <a ui-sref="home" class="item" id="logout">Logout</a>
     </div>
+</div> 
+
+<div class="ui grid container" id="userCategory">
+    <div class="centered seven wide stackable column">
+        <button class="ui black basic button" id="category2">Categories:</button>
+        <a ui-sref="create"><button class="ui black basic button" id="black">Create your own flashcard pile!</button></a>
+        <a ui-sref="study"><button class="ui violet basic button" id="violet">HTML/CSS</button></a>
+        <a ui-sref="study"><button class="ui green basic button" id="green">JavaScript</button></a> 
+        <a ui-sref="study"><button class="ui blue basic button" id="blue">Ruby on Rails</button></a>
+    </div>
+</div>

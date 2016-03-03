@@ -261,3 +261,7 @@ h2:first-child{
     color: black;
     border: 1px solid black;
 }
+#signup-form{
+    background-color: white;
+    border: none;
+}
