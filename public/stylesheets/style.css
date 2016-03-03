@@ -234,3 +234,20 @@ h4{
 h6{
     font-size: 22px;    
 }
+
+h2:first-child{
+    margin-bottom: 30px;
+    text-align: center; 
+}
+#login{
+    background-color: #2e2e2e;
+    color: #cacbcd;
+    padding: 15px;
+    font-size: 18px;    
+    border: none;
+}
+#login:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

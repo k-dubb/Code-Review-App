@@ -30,12 +30,16 @@
 
     <div class="col-sm-6 col-sm-offset-3">
 
-        <h1><span class="fa fa-sign-in"></span> Signup</h1>
 
         <!-- show any messages that come back with authentication -->
         <% if (message.length > 0) { %>
             <div class="alert alert-danger"><%= message %></div>
         <% } %>
+
+
+    <div class="ui raised segment" id="loginSection">
+
+        <h2>Sign Up</h2>
 
         <!-- LOGIN FORM -->
         <form action="/signup" method="post">
@@ -48,7 +52,7 @@
                 <input type="password" class="form-control" name="password">
             </div>
 
-            <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+            <button type="submit" class="btn btn-warning btn-lg" id="login">Signup</button>
         </form>
 
         <hr>
