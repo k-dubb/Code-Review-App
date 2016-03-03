@@ -3,25 +3,42 @@
 <section ng-controller="StacksController as stackCtrl">
     <div class="flash">
         <div class="ui segment" id="flashcard"> <!-- ng-click="clicked=true">  -->
-            <div ng-repeat="stack in stackCtrl.stacks">
+            <!-- <div ng-repeat="stack in stackCtrl.stacks"> -->
+                
+
+                <div>
+                    <p>
+                        {{stackCtrl.currentCard.term}}
+                    </p>
+                    <p>
+                        {{stackCtrl.currentCard.definition}}
+                    </p>
+                </div>
+                
+
+                <!--
                 <div ng-repeat="card in stack.cards track by $index">
                     <div ng-show="stackCtrl.showCard($index)">
                         <p>
                             {{card.term}}
                         </p>
-                        <!-- <p ng-show="stackCtrl.showDefinition($index)"> -->
                         <p ng-show="!stackCtrl.showCard($index)">
                             {{card.definition}}
                         </p>
                     </div>
                 </div>
-            </div>
+                -->
+
+
+            <!-- </div> -->
         </div>
     </div>
+
+    <button class="ui button" id="thumbsdown" ng-click="stackCtrl.nextCard()">Thumbs Down</button>
+    <button class="ui button" id="flip" ng-click="stackCtrl.showCard()">Flip Card</button>
+    <button class="ui button" id="thumbsup" ng-click="stackCtrl.nextCard()">Thumbs Up</button>
 </section>
 
 <!-- <section ng-show="clicked==true"> -->
-    <button class="ui button" id="thumbsdown" ng-click="nextCard()">Thumbs Down</button>
-    <button class="ui button" id="flip" ng-click="showCard()">Flip Card</button>
-    <button class="ui button" id="thumbsup" ng-click="nextCard()">Thumbs Up</button>
+    
 <!-- </section>
