@@ -135,6 +135,12 @@ h3{
     font-size: 24px;
     padding: 0 30px;
 }
+h4{
+    vertical-align: middle;
+    margin-top: 20px !important;
+    font-size: 24px;
+    padding: 0 30px;    
+}
 .fa{
     height: auto;
     width: auto;
@@ -168,28 +174,47 @@ h3{
     width: 50%;
     margin-top: 30px;
 }
-#back, #done{
+#back{
     background-color: #2e2e2e;
     color: #cacbcd;
     padding: 15px;
     font-size: 18px;
 }
-.done{
-    margin: auto;
-}
-#new{
+.done, #add{
     margin: 20px;
-}
-#newCategory{
-    margin-top: 30px;
-    margin-left: 120px;
+    text-align: center;    
 }
 #textarea{
     width: 300px;
 }
-#textarea2, #textarea3{
+#textarea2{
     width: 300px;
-    margin-left: 150px; 
+    margin-left: 65px;
+}
+#textarea3{
+    width: 300px;
+    margin-left: 220px;
+}
+#textarea, #textarea2, #textarea3{
+    border: 1px solid #2e2e2e;
+    border-radius: .28571429rem;
+}
+#label{
+    font-size: 18px;
+    margin-left: 180px;
+}
+#label2{
+    font-size: 18px;
+    margin-left: 300px;
+}
+#label3{
+    margin-left: 80px;
+}
+#category{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-right: 40px;
+    /*text-align: center;*/
 }
 #cardInfo{
     margin: auto;
@@ -199,13 +224,14 @@ h3{
     width: 350px;
 }
 #newFlashcardPlacement{
-    margin: auto;
-    width: 50%;
+    margin-left: 50px;
 }
-#textarea, #textarea2{
-    border: 1px solid #2e2e2e;
-    border-radius: .28571429rem;
+#newFlashcardPlacement2{
+    margin-right: 50px;
 }
 #circleIcon{
     margin: 10px;
+}
+h6{
+    font-size: 22px;    
 }
