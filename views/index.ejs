@@ -20,7 +20,10 @@
     <script src="/javascripts/homeView.js"></script>
 </head>
 <body >
-    <top></top>
+    <!-- Main Content -->
+    <div class="container">
+        <div ui-view></div>
+    </div>
 
     <!-- <div class="ui top fixed stackable menu"> -->
     <!-- <div class="ui four item fluid menu top fixed container" id="head">  -->
@@ -33,12 +36,12 @@
     </div>
  -->
 
-    <div class="item" id="saying">Your home for web development study!</div>
+<!--     <div class="item" id="saying">Your home for web development study!</div>
 
     <div class="ui grid container">
         <div class="centered seven wide stackable column" id="categoryList">
             <button class="ui black basic button" id="category">Categories:</button>
-            <a href="/study"><button class="ui violet basic button" id="violet">HTML/CSS</button></a>
+            <a ui-sref-active="active" ui-sref="study"><button class="ui violet basic button" id="violet">HTML/CSS</button></a>
             <a href="/study"><button class="ui green basic button" id="green">JavaScript</button></a> 
             <a href="/study"><button class="ui blue basic button" id="blue">Ruby on Rails</button></a>
         </div>
@@ -49,9 +52,9 @@
                 <a href="/signup"><button class="ui black button" id="log">Signup</button></a>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <flash></flash>
+    <!-- <flash></flash> -->
 
 
 

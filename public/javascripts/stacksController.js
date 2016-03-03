@@ -52,12 +52,14 @@
 
     }
 
-    this.showCard = function(index) {
-      if (counter === index) {
-        return true;
-      }
-      return false;
-    }
+    // this.showCard = function(index) {
+    //   if (counter === self.index) {
+    //             console.log('testing flip card');
+
+    //     return true;
+    //   }
+    //   return false;
+    // }
 
     // this.showDefintion = function(index) {
     //   if (counter === index) {

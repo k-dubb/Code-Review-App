@@ -3,40 +3,33 @@ body {
     padding-top:80px; 
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-/*.ui.menu{
-    background-color: #eaeaea;
-    color: black;
-}*/
-/*.header.item{
-    width: 350px;
-    position: left !important;
-}*/
 #saying{
     width: 500px;
     text-align: center;
     width: 100%;
     padding-top: 20px;
-    /*position: left;*/
     font-size: 26px;
 }
-#usersname, #logout{
-    max-width: 200px;
+#saying2{
+    max-width: 500px;
+    text-align: center;
+    width: 100%;
+    background-color: #2e2e2e;
+    color: white;
+    font-style: italic;
+    font-size: 26px;
 }
-#logout:hover{
-    color: #E83F6F;
+#header, #header2{
+    font-size: 45px;
+    background-color: #2e2e2e;
+    color: #cacbcd;
+    font-weight: normal;
+    width: 100%;
+    max-width: 500px;
 }
-.ui.menu .item{
-    padding: 10px;
-    background-color: #eaeaea;
-    color: black;
+#head, #head2{
+    background-color: #2e2e2e;
 }
-/*.ui.menu .item:before{
-    position: relative !important;
-}*/
-/*.ui.item.menu .item{
-justify-content: none !important;
-text-align: left !important;
-}*/
 .item{
     font-size: 20px;
 }
@@ -44,20 +37,22 @@ text-align: left !important;
     font-size: 45px;
     background-color: #2e2e2e;
     min-width: 800px;
-/*    margin-left: 0px !important;
-    position: relative !important;
-    left: 0 !important;
-    display: left !important;*/
-/*    justify-content: flex-start !important;
-*/}
-#head{
-    background-color: #2e2e2e;
 }
-#header{
-    /*color: #E83F6F;*/
+#usersname, #logout{
+    max-width: 200px;
+}
+#logout{
+    background-color: #2e2e2e;
     color: white;
-    font-weight: normal;
-    width: 100%;
+}
+#logout:hover{
+    background-color: #cacbcd;
+    color: black;
+}
+.ui.menu .item{
+    padding: 10px;
+    background-color: #eaeaea;
+    color: black;
 }
 .ui.segment{
     text-align: center;
@@ -118,7 +113,7 @@ h4{
     margin-right: 40px;
     color: #2e2e2e;
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-    border: 2px solid #2e2e2e;;
+    /*border: 2px solid #2e2e2e;;*/
 }
 #categoryList{
     margin-top: 30px;
@@ -133,15 +128,33 @@ h3{
     vertical-align: middle;
     margin-top: 100px !important;
     font-size: 24px;
+    padding: 0 30px;
 }
-.ui.button{
+.fa{
     height: auto;
     width: auto;
-    margin: 15px;
+    margin: 10px;
+    margin-left: 30px;
+}
+#buttonPlacement{
+    margin: auto;
+    width: 50%;
+    margin-right: 180px;
 }
 #thumbsup{
-    background-color: green;
+    color: green;
+    cursor: pointer;
 }
 #thumbsdown{
-    background-color: red;
+    color: red;
+    cursor: pointer;
+}
+#flip{
+    color: #2e2e2e;
+    cursor: pointer;
+}
+#flashcardPlacement{
+    margin: auto;
+    width: 50%;
+    margin-top: 75px;
 }

@@ -1,44 +1,33 @@
 <!-- Show one flashcard at a time  http://localhost:3000/#study -->
 
+<!-- Header -->
+<div class="top" ng-controller="StacksController as stackCtrl">
+    <div class="ui four item fluid menu top fixed container" id="head2"> 
+        <a ui-sref="home"><div class="header2 item" id="header2"> < Code Review > </div></a>
+        <!-- <div class="item" id="usersname">Hello, {{username}}</div> -->
+        <div class="item" id="saying2">Your home for web development study!</div>
+        <a ui-sref="home" class="item" id="logout">Logout</a>
+    </div>
+</div> 
+
 <section ng-controller="StacksController as stackCtrl">
+  <div class="column" id="flashcardPlacement">
     <div class="flash">
-        <div class="ui segment" id="flashcard"> <!-- ng-click="clicked=true">  -->
-            <!-- <div ng-repeat="stack in stackCtrl.stacks"> -->
-                
-
-                <div>
-                    <p>
-                        {{stackCtrl.currentCard.term}}
-                    </p>
-                    <p>
-                        {{stackCtrl.currentCard.definition}}
-                    </p>
-                </div>
-                
-
-                <!--
-                <div ng-repeat="card in stack.cards track by $index">
-                    <div ng-show="stackCtrl.showCard($index)">
-                        <p>
-                            {{card.term}}
-                        </p>
-                        <p ng-show="!stackCtrl.showCard($index)">
-                            {{card.definition}}
-                        </p>
-                    </div>
-                </div>
-                -->
-
-
-            <!-- </div> -->
+        <div class="ui piled segment" id="flashcard">
+            <div>
+                <h3 ng-show="showCard">
+                    {{stackCtrl.currentCard.term}}
+                </h3>
+                <h3 ng-show="!showCard">
+                    {{stackCtrl.currentCard.definition}}
+                </h3>
+            </div>
         </div>
     </div>
-
-    <button class="ui button" id="thumbsdown" ng-click="stackCtrl.nextCard()">Thumbs Down</button>
-    <button class="ui button" id="flip" ng-click="stackCtrl.showCard()">Flip Card</button>
-    <button class="ui button" id="thumbsup" ng-click="stackCtrl.nextCard()">Thumbs Up</button>
+  </div>
+  <div class="column" id="buttonPlacement">
+    <i class="fa fa-thumbs-down fa-4x" id="thumbsdown" ng-click="stackCtrl.nextCard()"></i>
+    <i class="fa fa-repeat fa-4x" id="flip" ng-click="showCard = !showCard"></i>
+    <i class="fa fa-thumbs-up fa-4x" id="thumbsup" ng-click="stackCtrl.nextCard()"></i>
+  </div>
 </section>
-
-<!-- <section ng-show="clicked==true"> -->
-    
-<!-- </section>
