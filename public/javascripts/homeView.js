@@ -1,21 +1,17 @@
-(function(){
+// (function(){
 
-    angular.module('CodeReview')
-        .directive('top', homeView);
+//     angular.module('CodeReview')
+//         .directive('top', homeView);
 
-    function homeView(){
+//     function homeView(){
 
-        var directive = {};
-        directive.restrict = 'E';
-        // directive.replace = true;
-        directive.templateUrl =  "/templates/_homeView.html";
-        // directive.scope = {
-        //     term: '@'
-        // };
+//         var directive = {};
+//         directive.restrict = 'E';
+//         directive.templateUrl =  "/templates/_homeView.html";
 
-    return directive;
+//     return directive;
 
-    };
+//     };
 
-})();
+// })();
 

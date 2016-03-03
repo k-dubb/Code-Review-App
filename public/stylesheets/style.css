@@ -43,11 +43,12 @@ body {
 }
 #logout{
     background-color: #2e2e2e;
-    color: white;
+    color: #cacbcd;
 }
 #logout:hover{
     background-color: #cacbcd;
     color: black;
+    font-weight: bold;
 }
 .ui.menu .item{
     padding: 10px;
@@ -85,7 +86,7 @@ h4{
     margin: 10px;
     font-size: 18px;
 }
-#violet, #green, #blue{
+#violet, #green, #blue, #black{
     border: 1.5px solid;
     font-size: 20px;
     font-weight: bold;
@@ -100,6 +101,10 @@ h4{
 }
 #blue:hover{
     background-color: #2185d0 !important;
+    color: white !important;
+}
+#black:hover{
+    background-color: black !important;
     color: white !important;
 }
 #category{
@@ -157,4 +162,50 @@ h3{
     margin: auto;
     width: 50%;
     margin-top: 75px;
+}
+#userCategory{
+    margin: auto;
+    width: 50%;
+    margin-top: 30px;
+}
+#back, #done{
+    background-color: #2e2e2e;
+    color: #cacbcd;
+    padding: 15px;
+    font-size: 18px;
+}
+.done{
+    margin: auto;
+}
+#new{
+    margin: 20px;
+}
+#newCategory{
+    margin-top: 30px;
+    margin-left: 120px;
+}
+#textarea{
+    width: 300px;
+}
+#textarea2, #textarea3{
+    width: 300px;
+    margin-left: 150px; 
+}
+#cardInfo{
+    margin: auto;
+}
+#makeFlashcard{
+    height: 200px;
+    width: 350px;
+}
+#newFlashcardPlacement{
+    margin: auto;
+    width: 50%;
+}
+#textarea, #textarea2{
+    border: 1px solid #2e2e2e;
+    border-radius: .28571429rem;
+}
+#circleIcon{
+    margin: 10px;
 }

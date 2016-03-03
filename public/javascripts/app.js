@@ -16,8 +16,8 @@
         templateUrl: '/templates/_userView.html'
       })
       // build your own flashcard stack
-      .state('add', {
-        url: '/user/stack',
+      .state('create', {
+        url: '/user/create',
         templateUrl: '/templates/_stackView.html'
       })
       // go thru the flashcards
