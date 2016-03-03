@@ -118,7 +118,6 @@ h4{
     margin-right: 40px;
     color: #2e2e2e;
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-    /*border: 2px solid #2e2e2e;;*/
 }
 #categoryList{
     margin-top: 30px;
@@ -131,7 +130,7 @@ h4{
 }
 h3{
     vertical-align: middle;
-    margin-top: 100px !important;
+    margin-top: 90px !important;
     font-size: 24px;
     padding: 0 30px;
 }
@@ -149,16 +148,26 @@ h4{
 }
 #buttonPlacement{
     margin: auto;
+    margin-top: 20px;
     width: 50%;
-    margin-right: 180px;
+    margin-right: 220px;
+
 }
 #thumbsup{
-    color: green;
+    color: #00e600;
     cursor: pointer;
+    margin-left: 45px;
+}
+#thumbsup:hover{
+    color: #00cc00;
 }
 #thumbsdown{
-    color: red;
+    color: #ff1a1a;
     cursor: pointer;
+    margin-right: 30px; 
+}
+#thumbsdown:hover{
+    color: #e60000;
 }
 #flip{
     color: #2e2e2e;
@@ -167,7 +176,7 @@ h4{
 #flashcardPlacement{
     margin: auto;
     width: 50%;
-    margin-top: 75px;
+    margin-top: 25px;
 }
 #userCategory{
     margin: auto;
@@ -179,6 +188,7 @@ h4{
     color: #cacbcd;
     padding: 15px;
     font-size: 18px;
+    margin-top: 20px;
 }
 .done, #add{
     margin: 20px;
