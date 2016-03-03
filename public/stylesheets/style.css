@@ -42,7 +42,7 @@ text-align: left !important;
 }
 .header{
     font-size: 45px;
-    background-color: #eaeaea;
+    background-color: #2e2e2e;
     min-width: 800px;
 /*    margin-left: 0px !important;
     position: relative !important;
@@ -51,10 +51,11 @@ text-align: left !important;
 /*    justify-content: flex-start !important;
 */}
 #head{
-    background-color: #eaeaea;
+    background-color: #2e2e2e;
 }
 #header{
-    color: #E83F6F;
+    /*color: #E83F6F;*/
+    color: white;
     font-weight: normal;
     width: 100%;
 }
@@ -74,10 +75,13 @@ h4{
     min-width: 200px;
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
     font-weight: normal;
+    background-color: white;
+    color: black;
+    border: 1px solid #2e2e2e;
 }
 #log:hover{
-    background-color: white;
-    color: #E83F6F;
+    background-color: #2e2e2e;
+    color: white;
     border: 1px solid black;
 }
 .ui.basic.button{
@@ -112,8 +116,9 @@ h4{
 #loginSection{
     margin-top: 50px;
     margin-right: 40px;
-    background-color: #f4f4f4;
+    color: #2e2e2e;
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    border: 2px solid #2e2e2e;;
 }
 #categoryList{
     margin-top: 30px;
@@ -128,4 +133,15 @@ h3{
     vertical-align: middle;
     margin-top: 100px !important;
     font-size: 24px;
+}
+.ui.button{
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+#thumbsup{
+    background-color: green;
+}
+#thumbsdown{
+    background-color: red;
 }
