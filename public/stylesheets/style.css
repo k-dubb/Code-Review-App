@@ -107,7 +107,7 @@ h4{
     background-color: black !important;
     color: white !important;
 }
-#category{
+#category2{
     text-align: center;
     box-shadow: none !important;
     font-size: 26px;
@@ -213,8 +213,7 @@ h4{
 #category{
     font-size: 18px;
     margin-top: 20px;
-    margin-right: 40px;
-    /*text-align: center;*/
+    margin-left: 60px;
 }
 #cardInfo{
     margin: auto;
